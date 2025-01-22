@@ -31,7 +31,7 @@ root.title("Reya Lab Image Analysis Software")
 root.geometry("1250x200")  # Set the window size
 
 try:
-    root.iconbitmap("C:/Users/mchva/Desktop/Reya Lab/Data/Mari_image_Analysis_Jan2025/cell_icon.ico")
+    root.iconbitmap("YOUR_PATH_HERE/cell_icon.ico")
 except:
     pass
 
@@ -134,7 +134,7 @@ label_hidden.grid(row=5, column=0, padx=10, pady=5, sticky="w")
 def run_analysis(maxc, minc, circ, filn, path, LQP_cut, nec_px_std_cut, nec_circ_min, live_px_std_cut, low_pix_max, do_all = False):
     sys.path.append(path)
     label_hidden.config(text="Initiated analysis.")
-    import Mari_image_analyzer5 as MA
+    import Colony_image_analyzer5 as MA
     if do_all == False:
         MA.main([maxc, minc, circ, path, filn, LQP_cut, nec_px_std_cut, nec_circ_min, live_px_std_cut, low_pix_max])
     else:
