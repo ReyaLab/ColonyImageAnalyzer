@@ -7,4 +7,4 @@ It works using OpenCV2's find_threshhold functions.
 
 Required libraries are OpenCV2, Pandas, and NumPy.
 
-Dowload the scripts, put them in the same folder, then run the GUI script. Enter the PATH of your greyscale TIFF image files and then run.
+Download the scripts, put them in the same folder, then run the GUI script. Enter the PATH of your greyscale TIFF image files and then run.
